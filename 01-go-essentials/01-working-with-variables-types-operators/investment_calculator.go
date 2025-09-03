@@ -34,7 +34,9 @@ func main() {
 	futureValue := investmentAmount * math.Pow(1+expectedReturnRate/100, years)
 	futureRealValue := futureValue / math.Pow(1+inflationRate/100, years)
 
-	fmt.Println("未來預估價值:", futureValue)
+	// fmt.Printf("未來預估價值: %v\n", futureValue)
+	fmt.Printf("未來預估價值: %.2f\n", futureValue)
+	// fmt.Println("未來預估價值:", futureValue)
 	fmt.Println("未來實際價值:", futureRealValue)
 	// 要執行的時候可以在 terminal 輸入 go run investment_calculator.go 或是 investment_calculator 或是 go run .
 }
@@ -47,3 +49,8 @@ go build
 */
 
 // GO library: https://pkg.go.dev/std
+
+/*
+cd 01-go-essentials/01-working-with-variables-types-operators
+go run investment_calculator.go
+*/
