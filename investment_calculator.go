@@ -20,6 +20,13 @@ func main() {
 	// var expectedReturnRate float64 = 5.5
 	expectedReturnRate := 5.5 // 也可以寫成這樣
 
+	fmt.Print("請輸入投資金額: ")
+	fmt.Scan(&investmentAmount)
+	fmt.Print("請輸入預期年化報酬率(%): ")
+	fmt.Scan(&expectedReturnRate)
+	fmt.Print("請輸入投資年限: ")
+	fmt.Scan(&years)
+
 	// var years float64 = 10
 
 	// var futureValue = float64(investmentAmount) * math.Pow(1+expectedReturnRate/100, float64(years))
